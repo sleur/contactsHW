@@ -14,6 +14,19 @@ class ViewControllerForContactDetail: UIViewController {
     @IBOutlet weak var cell4LastName: UITextField!
     @IBOutlet weak var cell4Email: UITextField!
     @IBOutlet weak var cell4Phone: UITextField!
+
+ 
+    @IBAction func UpdateDetails(sender: AnyObject) {
+        let fname = self.cell4FirstName.text
+        let lname = self.cell4LastName.text
+        let email = self.cell4Email.text
+        let phone = self.cell4Phone.text
+        let action = "Update"
+        if let cont : Contact = contact!{
+            
+        }
+        
+    }
     
     var contact : Contact?
     override func viewDidLoad() {

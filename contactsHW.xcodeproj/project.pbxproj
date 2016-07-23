@@ -15,6 +15,7 @@
 		2213CB5C1D41BC2E00676329 /* ContactListDetailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2213CB5B1D41BC2E00676329 /* ContactListDetailed.swift */; };
 		2219F15A1D43DD050001CAB4 /* ContactNameLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2219F1591D43DD050001CAB4 /* ContactNameLabel.swift */; };
 		2219F15C1D43E17F0001CAB4 /* ViewControllerForContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2219F15B1D43E17F0001CAB4 /* ViewControllerForContactDetail.swift */; };
+		2219F15E1D43F8E30001CAB4 /* updateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2219F15D1D43F8E30001CAB4 /* updateProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2213CB5B1D41BC2E00676329 /* ContactListDetailed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListDetailed.swift; sourceTree = "<group>"; };
 		2219F1591D43DD050001CAB4 /* ContactNameLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactNameLabel.swift; sourceTree = "<group>"; };
 		2219F15B1D43E17F0001CAB4 /* ViewControllerForContactDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerForContactDetail.swift; sourceTree = "<group>"; };
+		2219F15D1D43F8E30001CAB4 /* updateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = updateProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				2213CB551D41BA2600676329 /* Info.plist */,
 				2213CB5B1D41BC2E00676329 /* ContactListDetailed.swift */,
 				2219F1591D43DD050001CAB4 /* ContactNameLabel.swift */,
+				2219F15D1D43F8E30001CAB4 /* updateProtocol.swift */,
 			);
 			path = contactsHW;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			files = (
 				2213CB5C1D41BC2E00676329 /* ContactListDetailed.swift in Sources */,
 				2213CB4C1D41BA2600676329 /* ViewController.swift in Sources */,
+				2219F15E1D43F8E30001CAB4 /* updateProtocol.swift in Sources */,
 				2219F15A1D43DD050001CAB4 /* ContactNameLabel.swift in Sources */,
 				2213CB4A1D41BA2600676329 /* AppDelegate.swift in Sources */,
 				2219F15C1D43E17F0001CAB4 /* ViewControllerForContactDetail.swift in Sources */,
