@@ -10,21 +10,33 @@ import UIKit
 
 class ViewControllerForContactDetail: UIViewController {
 
+    var delegate: updateContactDetails?
     @IBOutlet weak var cell4FirstName: UITextField!
     @IBOutlet weak var cell4LastName: UITextField!
     @IBOutlet weak var cell4Email: UITextField!
     @IBOutlet weak var cell4Phone: UITextField!
 
+    
  
     @IBAction func UpdateDetails(sender: AnyObject) {
         let fname = self.cell4FirstName.text
         let lname = self.cell4LastName.text
         let email = self.cell4Email.text
         let phone = self.cell4Phone.text
-        let action = "Update"
-        if let cont : Contact = contact!{
+        
+        let con = Contact(fName: fname, lName: lname, emailAddress: email, phoneNumber: phone)
+        
+        if let delegate = self.delegate{
+        delegate.controller(self, didAddItem: con, editAction: "hy")
+        
+            print("just executed @IBAction func called Update Details")
             
         }
+
+
+  /*      if let cont : Contact = contact!{
+            
+        } */
         
     }
     
@@ -39,7 +51,7 @@ class ViewControllerForContactDetail: UIViewController {
             cell4Email.text = con.email
             cell4Phone.text = con.phone
             
-            
+            print("entered if let con:Contact")
         }
         
         // Do any additional setup after loading the view.
@@ -48,6 +60,8 @@ class ViewControllerForContactDetail: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+        print("entered didReceiveMemoryWarning")
     }
     
 

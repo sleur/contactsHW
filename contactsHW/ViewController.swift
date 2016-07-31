@@ -23,17 +23,23 @@ class ViewController: UIViewController, UITableViewDataSource, updateContactDeta
         super.viewDidLoad()
         self.tableView.dataSource = self
         // Do any additional setup after loading the view, typically from a nib.
+        
+        print ("viewDidLoad just ran")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
         // Dispose of any resources that can be recreated.
+        
+        print ("didReceiveMemoryWarning just ran")
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
+      print ("tableView function just ran and it's about to hit listOfContact")
       return listOfContact.count
+        
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -46,10 +52,10 @@ class ViewController: UIViewController, UITableViewDataSource, updateContactDeta
             let theLastName = listOfContact[indexPath.row].lastName!
             
             cell.labelForNames.text = ("\(theFirstName) \(theLastName)")
+            
             print("\(theFirstName) \(theLastName)")
             
         return cell
-            
 
         }
         
@@ -66,13 +72,14 @@ class ViewController: UIViewController, UITableViewDataSource, updateContactDeta
             //destination!.delegate = self
         }
         
+        print("prepareForSegue just ran")
+        print(prepareForSegue) 
         
-
     }
     
     func controller(controller: ViewControllerForContactDetail, didAddItem: Contact, editAction: String) {
         
-        var currentRowSelected = tableView.indexPathForSelectedRow?.row
+        let currentRowSelected = tableView.indexPathForSelectedRow?.row
         
        // listOfContact[currentRowSelected]
         listOfContact[currentRowSelected!].firstName = didAddItem.firstName
@@ -80,12 +87,15 @@ class ViewController: UIViewController, UITableViewDataSource, updateContactDeta
         listOfContact[currentRowSelected!].email = didAddItem.email
         listOfContact[currentRowSelected!].phone = didAddItem.phone
         
+        tableView.reloadData()
+        navigationController!.popViewControllerAnimated(true)
+        
         
         //listOfContact.removeAtIndex(currentRowSelected!)
         //listOfContact.insert(<#T##newElement: Element##Element#>, atIndex: <#T##Int#>)
-
+        print("controller class is just ran")
     }
-
+ 
 
 }
 

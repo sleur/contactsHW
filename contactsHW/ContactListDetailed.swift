@@ -9,11 +9,13 @@
 import Foundation
 
 class Contact{
+    
+    let contactId : String = NSUUID().UUIDString
 
-var firstName : String?
-var lastName  : String?
-var email : String?
-var phone : String?
+    var firstName : String?
+    var lastName  : String?
+    var email : String?
+    var phone : String?
 
     init(fName: String?, lName: String?, emailAddress: String?, phoneNumber: String?){
         
@@ -21,6 +23,8 @@ var phone : String?
     self.lastName = lName
     self.email = emailAddress
     self.phone = phoneNumber
+        
+        print("Contact class just initialized")
         
     }
 }

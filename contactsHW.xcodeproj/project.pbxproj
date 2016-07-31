@@ -16,6 +16,7 @@
 		2219F15A1D43DD050001CAB4 /* ContactNameLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2219F1591D43DD050001CAB4 /* ContactNameLabel.swift */; };
 		2219F15C1D43E17F0001CAB4 /* ViewControllerForContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2219F15B1D43E17F0001CAB4 /* ViewControllerForContactDetail.swift */; };
 		2219F15E1D43F8E30001CAB4 /* updateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2219F15D1D43F8E30001CAB4 /* updateProtocol.swift */; };
+		22E72FDE1D4DA85400AA9E13 /* DataManagerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E72FDD1D4DA85400AA9E13 /* DataManagerClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2219F1591D43DD050001CAB4 /* ContactNameLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactNameLabel.swift; sourceTree = "<group>"; };
 		2219F15B1D43E17F0001CAB4 /* ViewControllerForContactDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerForContactDetail.swift; sourceTree = "<group>"; };
 		2219F15D1D43F8E30001CAB4 /* updateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = updateProtocol.swift; sourceTree = "<group>"; };
+		22E72FDD1D4DA85400AA9E13 /* DataManagerClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagerClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				2213CB5B1D41BC2E00676329 /* ContactListDetailed.swift */,
 				2219F1591D43DD050001CAB4 /* ContactNameLabel.swift */,
 				2219F15D1D43F8E30001CAB4 /* updateProtocol.swift */,
+				22E72FDD1D4DA85400AA9E13 /* DataManagerClass.swift */,
 			);
 			path = contactsHW;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22E72FDE1D4DA85400AA9E13 /* DataManagerClass.swift in Sources */,
 				2213CB5C1D41BC2E00676329 /* ContactListDetailed.swift in Sources */,
 				2213CB4C1D41BA2600676329 /* ViewController.swift in Sources */,
 				2219F15E1D43F8E30001CAB4 /* updateProtocol.swift in Sources */,

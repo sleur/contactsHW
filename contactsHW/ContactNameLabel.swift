@@ -11,7 +11,7 @@ import UIKit
 class ContactNameLabel: UITableViewCell {
 
 @IBOutlet weak var labelForNames: UILabel!
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,4 +23,5 @@ class ContactNameLabel: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    //print("...")
 }

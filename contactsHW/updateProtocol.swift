@@ -9,7 +9,9 @@
 import Foundation
 
 protocol updateContactDetails {
-    
+
     func controller(controller: ViewControllerForContactDetail, didAddItem: Contact, editAction: String)
+    
+  //  print("just completed protocol")
     
 }
